@@ -28,8 +28,9 @@ export default function App() {
       
       <div>
 
-	<p>ITPS205 Finals Hands On Quiz 2</p>
-	<p>by Khian Victory D. Calderon - BSIT-2A</p>
+	<p className="text-center">ITPS205 Finals Hands On Quiz 2</p>
+	<p className="text-center">by Khian Victory D. Calderon</p>
+	<p className="text-center">BSIT - 2A</p>
 	<hr/>
 
         <h2 className="counter-label">{counter}</h2>
