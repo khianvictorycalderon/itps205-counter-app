@@ -28,6 +28,10 @@ export default function App() {
       
       <div>
 
+	<p>ITPS205 Finals Hands On Quiz 2</p>
+	<p>by Khian Victory D. Calderon - BSIT-2A</p>
+	<hr/>
+
         <h2 className="counter-label">{counter}</h2>
 
         <div className="buttons-container">
