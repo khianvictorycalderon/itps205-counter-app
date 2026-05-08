@@ -25,3 +25,12 @@ body {
   border: none;
   outline: none;
 }
+
+.counter-label {
+  font-size: 4rem;;
+  font-weight: bold;
+  text-align: center;
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+}

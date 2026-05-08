@@ -26,6 +26,8 @@ export default function App() {
       
       <div>
 
+        <h2 className="counter-label">{counter}</h2>
+
         <div className="buttons-container">
           {BUTTONS.map((item, index) => (
             <button
