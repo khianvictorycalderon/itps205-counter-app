@@ -27,6 +27,9 @@ export default function App() {
       <div>
 
         <h2 className="counter-label">{counter}</h2>
+        {counter >= 5 && (
+          <h3 className="goal-label">Goal Reached!</h3>
+        )}
 
         <div className="buttons-container">
           {BUTTONS.map((item, index) => (
