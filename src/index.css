@@ -16,6 +16,8 @@ body {
 .buttons-container {
   display: flex;
   gap: 0.5rem;
+  justify-content: center;
+  width: 100%;
 }
 
 .buttons-container > button {
@@ -40,4 +42,10 @@ body {
   font-size: 1rem;
   font-style: italic;
   text-align: center;
+}
+
+.input-box {
+  font-size: 1rem;
+  border-radius: 8px;
+  padding: 0.5rem;
 }

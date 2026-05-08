@@ -19,7 +19,9 @@ export default function App() {
       action: () => setCounter(item => item + 1),
       style: { backgroundColor: "blue" }
     },
-  ]
+  ];
+
+  const [messageInput, setMessageInput] = useState("Hello World");
   
   return (
     <div className="content">
@@ -43,6 +45,18 @@ export default function App() {
         {counter >= 5 && (
           <h3 className="goal-label">Goal Reached!</h3>
         )}
+
+        <hr/>
+
+        <input
+          type="text"
+          className="input-box"
+          value={messageInput}
+          onChange={(e) => setMessageInput(e.target.value)}
+        />
+
+        <h3>Typed Text:</h3>
+        <span>{messageInput}</span>
 
       </div>
 
