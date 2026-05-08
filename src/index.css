@@ -12,3 +12,16 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+.buttons-container {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.buttons-container > button {
+  padding: 0.2rem 1rem 0.2rem 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}

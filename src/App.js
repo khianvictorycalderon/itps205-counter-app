@@ -6,21 +6,40 @@ export default function App() {
   const BUTTONS = [
     {
       label: "-",
-      action: () => setCounter(item => item - 1)
+      action: () => setCounter(item => item - 1),
+      style: { backgroundColor: "red" }
     },
     {
       label: "0",
-      action: () => setCounter(0)
+      action: () => setCounter(0),
+      style: { backgroundColor: "gray" }
     },
     {
       label: "+",
-      action: () => setCounter(item => item + 1)
+      action: () => setCounter(item => item + 1),
+      style: { backgroundColor: "blue" }
     },
   ]
   
   return (
     <div className="content">
-      sfsaf
+      
+      <div>
+
+        <div className="buttons-container">
+          {BUTTONS.map((item, index) => (
+            <button
+              key={`${item.label}-${index}`}
+              onClick={item.action}
+              style={item.style}
+            >
+              {item.label}
+            </button>
+          ))}
+        </div>
+
+      </div>
+
     </div>
   );
 }
